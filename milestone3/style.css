@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 
 body{
     background-color: #D9D9D9;
@@ -14,9 +16,11 @@ header{
     background-color: #550C18;
     background-image: url(ninetyninehero.jpg);
     color: #FFF;
+    float: right;
 }
 
 nav{
+    padding: 1rem;
     grid-column: 3/8;
     font-weight: bold;
     background-color: #550C18;
@@ -25,25 +29,34 @@ nav{
 }
 
 nav a{
+    background-color: #588157;
+    border-radius: 5px;
     color: #fff;
-    padding: 1rem 0rem;
     text-align: center;
     text-decoration: none;
 }
 
 nav a:hover{
-    background-color: #BA1C21;
+    background-color: #273E47;
 }
 
 section{
     grid-column: 2/7;
     background-color: #273E47;
+    color:#FFF;
+
+}
+
+section img{
+    float: left;
+    rotate: 30deg;
 }
 
 footer{
     grid-column: 1/-1;
     background-color: #550C18;
     color: #FFF;
+    padding: 2.5% 5% 2.5% 5%;
 }
 
 #wrapper{
@@ -53,36 +66,33 @@ footer{
 
 #deck1{
     grid-column: 2;
+    background-image: url(dsk-228-rip-spawn-hunter.jpg);
     background-color: #550C18;
     color: #FFF;
-}
-
-#deck1 a{
-    text-decoration: none;
-    color: #FFF;
-    background-color: #588157;
 }
 
 #deck2{
     grid-column: 4;
+    background-image: url(clb-647-faldorn-dread-wolf-herald.jpg);
     background-color: #550C18;
     color: #FFF;
-}
-
-#deck2 a{
-    text-decoration: none;
-    color: #FFF;
-    background-color: #588157;
 }
 
 #deck3{
     grid-column: 6;
+    background-image: url(clb-143-safana-calimport-cutthroat.jpg);
     background-color: #550C18;
     color: #FFF;
 }
 
-#deck3 a{
+.goto{
     text-decoration: none;
     color: #FFF;
     background-color: #588157;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.goto:hover{
+    background-color: #273E47;
 }
