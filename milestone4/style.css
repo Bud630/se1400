@@ -11,21 +11,24 @@ body{
     margin: 0px;
 }
 
+header, nav{
+    position: sticky;
+    top: 0px;
+}
+
 header{
-    grid-column: 2/8;
+    grid-column: 2/3;
     background-color: #550C18;
-    background-image: url(ninetyninehero.jpg);
     color: #FFF;
     float: right;
 }
 
 nav{
-    padding: 1rem;
+    padding: 2rem;
+    padding-left: 6rem;
     grid-column: 3/8;
-    font-weight: bold;
+    font-size: medium;
     background-color: #550C18;
-    position: sticky;
-    top: 0px;
 }
 
 nav a{
@@ -41,15 +44,35 @@ nav a:hover{
 }
 
 section{
-    grid-column: 2/7;
+    grid-column: 2/8;
     background-color: #273E47;
     color:#FFF;
-
+    padding: 0px;
+    float: right;
 }
 
 section img{
+    grid-column: 2;
     float: left;
     rotate: 30deg;
+    width: 15%;
+    height: auto;
+    padding: 0px;
+    padding-right: 20px;
+    vertical-align: middle;
+}
+
+section p, section .goto{
+    padding: 10px;
+    vertical-align: middle;
+    float: inherit;
+    border-radius: 5px;
+    grid-column: 6/8;
+}
+
+section p{
+    background-color: #FFF;
+    color: #000;
 }
 
 footer{
@@ -64,32 +87,46 @@ footer{
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr)
 }
 
-#deck1{
-    grid-column: 2;
-    background-image: url(dsk-228-rip-spawn-hunter.jpg);
+#articlebar{
+    grid-column: 2/8;
+    border: 1px solid  #fff;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#articlebar article{
+    border: 1px solid  #fff;
+    width: 100%;
     background-color: #550C18;
     color: #FFF;
 }
 
-#deck2{
-    grid-column: 4;
-    background-image: url(clb-647-faldorn-dread-wolf-herald.jpg);
-    background-color: #550C18;
-    color: #FFF;
+#articlebar article img{
+    width: 1.5rem;
+    height: auto;
+    vertical-align: middle;
 }
 
-#deck3{
-    grid-column: 6;
-    background-image: url(clb-143-safana-calimport-cutthroat.jpg);
-    background-color: #550C18;
-    color: #FFF;
+#articlebar article #rip{
+    width: 100%;
+    height: auto;
+}
+
+#articlebar article #faldorn{
+    width: 100%;
+    height: auto;
+}
+
+#articlebar article #safana{
+    width: 100%;
+    height: auto;
 }
 
 .goto{
     text-decoration: none;
     color: #FFF;
     background-color: #588157;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 2%;
 }
 
