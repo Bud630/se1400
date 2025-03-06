@@ -63,16 +63,27 @@ section img{
 }
 
 section p, section .goto{
-    padding: 10px;
-    vertical-align: middle;
-    float: inherit;
+    padding: 5px, 10px;
+    display: inline-block;
     border-radius: 5px;
     grid-column: 6/8;
 }
 
 section p{
+    border-radius: 7px;
     background-color: #FFF;
     color: #000;
+}
+
+section .goto{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+section .goto:hover{
+    background-color: #550C18;
 }
 
 footer{
@@ -99,6 +110,14 @@ footer{
     width: 100%;
     background-color: #550C18;
     color: #FFF;
+}
+
+#articlebar h3{
+    text-align: center;
+}
+
+#articlebar p{
+    background-color: #273E47;
 }
 
 #articlebar article img{
