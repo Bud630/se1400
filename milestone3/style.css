@@ -1,0 +1,38 @@
+header {
+    grid-column: 2/8;
+    background-color: blue;
+    height: auto;
+    padding: 50px;
+}
+
+footer{
+    grid-column: 1/-1;
+    background-color: brown;
+    height: auto;
+    padding: 50px;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+}
+
+#main {
+    grid-column: 2/8;
+    background-color: lightgreen;
+    padding: 225px;
+}
+
+#sidebar1{
+    grid-column: 1;
+    grid-row: 1/5;
+    background-color: lightgray;
+    float: left;
+}
+
+#sidebar2{
+    grid-column: 8;
+    grid-row: 1/5;
+    background-color: orange;
+    float: right;
+}
